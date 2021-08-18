@@ -11,29 +11,29 @@ Within this scenario, we assumed the dataset would be used within a made-up lett
 For our Schema Tables, we took a UNF to 3NF approach to create them. This enabled us to split up the data attributes within the database more logically. 
 
 > Key: The top line is the header of the Schema Table. This will also be in bold. 
+> PK = Primary Key
+> FK = Foreign Key
 
-UNF				
+UNF 				
 				
 **name		  address		street address**
 age 		    owner		  postcode 
 num_of_ppl				
 
 
-
 1NF		
 		
-**person		address**
-f_name		  house_number
-l_name		  street
-age		      city
+**person	address**
+f_name	  	house_number
+l_name	  	street
+age	     	city
 num_of_ppl	county
-resident	  country
-		        postcode
+resident 	country
+	        postcode
 
 
-	2NF
-	
-	person
+2NF
+	**person**
 pk	persID
 	f_name
 	l_name
@@ -42,11 +42,10 @@ pk	persID
 fk	resID
 
 
-
-resident
-resID
-owner
-tenant
+=	**resident**
+pk	resID
+	owner
+	tenant
 
 
 

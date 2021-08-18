@@ -96,12 +96,13 @@ UNF
 |fk	|resID	|int|
 
 
-age		
-ageID	int	
-youth	int	18-24
-young_adult	int	25-34
-adult	int	35-59
-senior	int	60+
+|	|age|		|	|
+|-----|-----|-----|------|
+|pk	|ageID	|int	
+|	|youth	|int	|18-24
+|	|young_adult	|int	|25-34	
+|	|adult	|int	|35-59
+|	|senior	|int	|60+
 
 
 	resident type	

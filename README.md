@@ -79,7 +79,7 @@ For our Schema Tables, we took a UNF to 3NF approach to create them. This enable
 
 
 
-|	|**county**|
+|	|**country**|
 |---------------|--------|
 |pk	|countryID|
 |	|country|

@@ -16,7 +16,7 @@ For our Schema Tables, we took a UNF to 3NF approach to create them. This enable
 
 UNF 				
 				
-|person|address|street address|
+|**person**|**address**|**street address**|
 |-------|--------|----------|
 |age  |owner| postcode |
 |name|
@@ -25,7 +25,7 @@ UNF
 
 1NF		
 		
-|person		|address|
+|**person**	|**address**|
 |---------------|--------|
 |f_name	  	|house_number|
 |l_name	  	|street|
@@ -64,32 +64,36 @@ UNF
 |	|postcode|
 
 
-	city
-pk	cityID
-	city
+|	|**city**|
+|---------------|--------|
+|pk	|cityID|
+|	|city|
 
 
 
-	county
-pk	countyID
-	county
+|	|**county**|
+|---------------|--------|
+|pk	|countyID|
+|	|county|
 
 
 
-	country
-pk	countryID
-	country
+|	|**county**|
+|---------------|--------|
+|pk	|countryID|
+|	|country|
 
 
 3NF	
 		
-	person	
-pk	persID	int
-	f_name	varchar(50)
-	l_name	varchar(50)
-fk	ageID	int
-	num_of_ppl	int
-fk	resID	int
+|	|**person**|	|
+|---------------|--------|-------|
+|pk	|persID	|int|
+|	|f_name	|varchar(50)|
+|	|l_name	|varchar(50)|
+|fk	|ageID	|int|
+|	|num_of_ppl	|int|
+|fk	|resID	|int|
 
 
 age		

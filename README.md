@@ -86,7 +86,7 @@ UNF
 
 3NF	
 		
-|	|**person**|	|
+|	|**person**|**type**|
 |---------------|--------|-------|
 |pk	|persID	|int|
 |	|f_name	|varchar(50)|
@@ -96,26 +96,28 @@ UNF
 |fk	|resID	|int|
 
 
-|	|age|		|	|
+|	|**age**|**type**|**age groups**|
 |-----|-----|-----|------|
 |pk	|ageID	|int	
-|	|youth	|int	|18-24
-|	|young_adult	|int	|25-34	
-|	|adult	|int	|35-59
-|	|senior	|int	|60+
+|	|youth	|int	|18-24|
+|	|young_adult	|int	|25-34|	
+|	|adult	|int	|35-59|
+|	|senior	|int	|60+|
 
 
-	resident type	
-pk	resID	int
-	owner	boolean
-	tenant	boolean
+|	|**resident**| **type**|	
+|-----|-----|-----|
+|pk	|resID	|int|
+|	|owner	|boolean|
+|	|tenant	|boolean|
 
 
-	**house**	
-pk	houseID	    int
-fk	addressID	  int
-fk	resID	      int
-    size        int
+||**house**|**type**|
+|-----|-----|-----|
+|pk	|houseID	|int|
+|fk	|addressID|int|
+|fk	|resID	|int|
+|    |size	|int|
 
 
 

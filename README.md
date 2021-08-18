@@ -25,13 +25,14 @@ UNF
 
 1NF		
 		
-**person	address**
-f_name	  	house_number
-l_name	  	street
-age	     	city
-num_of_ppl	county
-resident 	country
-	        postcode
+|person		|address|
+|---------------|--------|
+|f_name	  	|house_number|
+|l_name	  	|street|
+|age	     	|city|
+|num_of_ppl	|county|
+|resident 	|country|
+	        |postcode|
 
 
 2NF

@@ -142,6 +142,29 @@ UNF
 
 ## API Requests 
 
+--- Store people, houses and addresses
+
+|Path        |HTTP verb   |Action      |Description|
+|-----|------|-------|------|
+|/owner      |post        |create      |adds new owner to database|
+|/tenant     |post        |create      |adds new tenant to database|
+
+
+--- Look up a house, it’s address and owner
+Path        HTTP verb   Action      Description
+/owner/:id  get     show        shows info about a certain owner
+/tenant/:id get     show        shows info about a certain tenant
+/house/:id  get     show        shows info about a certain house
+--- Look up people in our neighbourhood within certain age brackets and with specific household sizes
+Path                
+/letmemoveltd/accounts/searchType=young_adult&neighbourhood=POSTCODE%5E1591996=1&radius=0.5&householdSize=2
+    
+HTTP verb   
+get     
+Action      
+index       
+Description
+displays a list of all people within a certain neighbourhood within certain age brackets and with specific household sizes
 
 ## HTTP Verbs and Paths
 

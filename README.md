@@ -1,10 +1,10 @@
 # API Design Task
 
-## Considerations
+## Description and Considerations
 
-For this type of database, we would be want there to be relationships between the databases. With that in mind, a relational SQL database has been implemented. 
-
-Within this scenario, we assumed the dataset would be used within a made-up letting company where Owners could log in and access their house data, update/delete tenant information. Tenants could log in as well so they can update their information as well, incase they have moved on and now own a home or they want to alter other information on their profile. 
+Letting me move ltd. is a letting agency helping people with their moving needs.
+The API has been created to facilitate the navigation and data management for the users of Letting me move ltd., employees and clients alike.
+It is based on a relational database, thus the one implemented is using SQL.
 
 ## Schema
 
@@ -121,16 +121,16 @@ UNF
 
 
 
-	address	
-pk	addressID	int
-	house_number	varchar(50)
-	address_line_1	varchar(150)
-	address_line_2	varchar(150)
-fk	cityID	int
-fk	countyID	int
-fk	countryID	int
-	postcode	varchar(8)
-fk	houseID	int
+||**address**|**type**|	
+|pk	|addressID	|int|
+|	|house_number	|varchar(50)|
+|	|address_line_1	|varchar(150)|
+|	|address_line_2	|varchar(150)|
+|fk	|cityID	|int|
+|fk	|countyID	|int|
+|fk	|countryID	|int|
+|	|postcode	|varchar(8)|
+|fk	|houseID	|int|
 
 
 	neighbourhood	

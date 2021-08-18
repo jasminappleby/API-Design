@@ -53,15 +53,15 @@ UNF
 |	|tenant|
 
 
-
-	address
-pk	addressID
-	house_number
-	street
-fk	cityID
-fk	countyID
-fk	countryID
-	postcode
+|	|**address**|
+|---------------|--------|
+|pk	|addressID|
+|	|house_number|
+|	|street|
+|fk	|cityID|
+|fk	|countyID|
+|fk	|countryID|
+|	|postcode|
 
 
 	city

@@ -112,7 +112,7 @@ UNF
 |	|tenant	|boolean|
 
 
-||**house**|**type**|
+|	|**house**|**type**|
 |-----|-----|-----|
 |pk	|houseID	|int|
 |fk	|addressID|int|
@@ -121,7 +121,8 @@ UNF
 
 
 
-||**address**|**type**|	
+|	|**address**|**type**|	
+|-----|-----|-----|
 |pk	|addressID	|int|
 |	|house_number	|varchar(50)|
 |	|address_line_1	|varchar(150)|
@@ -133,9 +134,10 @@ UNF
 |fk	|houseID	|int|
 
 
-	neighbourhood	
-pk	neighbourhoodID	int
-fk	addressID	int
+|	|**neighbourhood**|**type**|
+|-----|-----|-----|
+|pk	|neighbourhoodID	|int|
+|fk	|addressID	|int|
 
 
 ## API Requests 

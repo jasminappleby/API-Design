@@ -36,13 +36,14 @@ UNF
 
 
 2NF
-	**person**
-pk	persID
-	f_name
-	l_name
-	age
-	num_of_ppl
-fk	resID
+|	|**person**|
+|-------|----------|
+|pk	|persID|
+|	|f_name|
+|	|l_name|
+|	|age|
+|	|num_of_ppl|
+|fk	|resID|
 
 
 =	**resident**

@@ -16,7 +16,7 @@ For our Schema Tables, we took a UNF to 3NF approach to create them. This enable
 
 UNF 				
 				
-**|name|address|street address|**
+|name|address|street address|
 |-------|--------|----------|
 |age  |owner		 | postcode 
 |num_of_ppl|	|	|		

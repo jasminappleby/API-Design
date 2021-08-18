@@ -46,10 +46,11 @@ UNF
 |fk	|resID|
 
 
-=	**resident**
-pk	resID
-	owner
-	tenant
+|	|**resident**|
+|----|-----|
+|pk	|resID|
+|	|owner|
+|	|tenant|
 
 
 

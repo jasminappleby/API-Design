@@ -32,7 +32,7 @@ UNF
 |age	     	|city|
 |num_of_ppl	|county|
 |resident 	|country|
-	        |postcode|
+|	        |postcode|
 
 
 2NF

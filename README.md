@@ -18,9 +18,9 @@ UNF
 				
 |person|address|street address|
 |-------|--------|----------|
-|age  |owner		 | postcode 
+|age  |owner| postcode |
 |name|
-|num_of_ppl|	|	|		
+|num_of_ppl|		
 
 
 1NF		

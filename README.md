@@ -23,7 +23,7 @@ For our Schema Tables, we took a UNF to 3NF approach to create them. This enable
 |num_of_ppl|		
 
 
-1NF		
+### 1NF		
 		
 |**person**	|**address**|
 |---------------|--------|
@@ -35,7 +35,8 @@ For our Schema Tables, we took a UNF to 3NF approach to create them. This enable
 |	        |postcode|
 
 
-2NF
+### 2NF
+
 |	|**person**|
 |---------------|--------|
 |pk	|persID|
@@ -84,7 +85,7 @@ For our Schema Tables, we took a UNF to 3NF approach to create them. This enable
 |	|country|
 
 
-3NF	
+### 3NF	
 		
 |	|**person**|**type**|
 |---------------|--------|-------|
@@ -142,7 +143,7 @@ For our Schema Tables, we took a UNF to 3NF approach to create them. This enable
 
 ## API Requests 
 
---- Store people, houses and addresses
+#### Store people, houses and addresses
 
 |**Path**        |**HTTP verb**   |**Action**     |**Description**|
 |-----|------|-------|------|
@@ -150,7 +151,7 @@ For our Schema Tables, we took a UNF to 3NF approach to create them. This enable
 |/tenant     |post        |create      |adds new tenant to database|
 
 
---- Look up a house, it’s address and owner
+#### Look up a house, it’s address and owner
 
 |**Path**        |**HTTP verb**   |**Action**     |**Description**|
 |-----|------|-------|------|
@@ -158,18 +159,22 @@ For our Schema Tables, we took a UNF to 3NF approach to create them. This enable
 |/tenant/:id |get     |show        |shows info about a certain tenant|
 |/house/:id  |get     |show        |shows info about a certain house|
 
+## HTTP Paths and Verbs
 
---- Look up people in our neighbourhood within certain age brackets and with specific household sizes
-Path                
+#### Look up people in our neighbourhood within certain age brackets and with specific household sizes
+
+**Path**                
+
 /letmemoveltd/accounts/searchType=young_adult&neighbourhood=POSTCODE%5E1591996=1&radius=0.5&householdSize=2
-    
-HTTP verb   
-get     
-Action      
-index       
-Description
-displays a list of all people within a certain neighbourhood within certain age brackets and with specific household sizes
 
-## HTTP Verbs and Paths
+
+**HTTP verb**
+get   
+
+**Action**      
+index       
+
+**Description**
+displays a list of all people within a certain neighbourhood within certain age brackets and with specific household sizes
 
 
